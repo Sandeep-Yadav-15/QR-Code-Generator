@@ -1,0 +1,51 @@
+/* Medai Query For Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px */
+    .container{
+        width: 95%;
+        padding: 1.5rem;
+        /* Adjusts padding and container width for screens 768px wide or smaller for better responsiveness */
+    }
+
+    .input{
+        padding: 0.5rem;
+        /* Reduces padding in input fields to fit smaller screens */
+    }
+
+    .button {
+        padding: 0.5rem;
+        /* Reduces padding in buttons for smaller screens */
+    }   
+}
+
+@media screen  and (max-width: 480px) {
+    /* Styles for screens with a maximum width of 480px */
+    .container{
+        margin-bottom: 12rem;
+        padding: 1rem;
+       
+    }
+
+    .user-data h2, .qr-canvas h2 {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        /* Reduces font size of headings for better readability on small screens */
+    }
+
+    .user-data{
+        margin-right: 1rem;
+    }
+
+    .qr-image {
+        padding-left: 6.1rem;
+        max-width: 75%;
+        /* Adjusts padding and scales down the QR image for very small screens */
+    }
+
+    body {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), url('./assets/background.jpg') no-repeat center center/cover;
+        backdrop-filter: blur(0px);
+        /* Adjusts the background and removes blur for very small screens */
+}
+    
+}

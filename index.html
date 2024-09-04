@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+    <!-- Open the HTML document and sets the languages to English -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding to UTF-8, which includes most characters from all written languages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper scaling on different devices, particularly mobile -->
+    <title>QR Code Generator</title>
+    <!-- Specifies the title of the web page, shown in the browser's title bar or tab -->
+
+    <link rel="stylesheet" href="./style.css">
+    <!-- Link to an external CSS file for styling-->
+    <link rel="stylesheet" href="./mediaquery.css">
+</head>
+<body>
+    <!-- Opens the body of the HTML document, where all visible content is placed -->
+
+    <div class="container">
+        <!-- A container div to group the main content of the page -->
+        <div class="user-data">
+            <!-- Div for user input fields related to data for the QR code generation -->
+            <h2>QR Code Generator</h2>
+            <!-- Heading for the QR Code Generator section -->
+
+            <label for="user-name" class="input-label">Name:</label>
+            <!-- label for the name input field -->
+            <input type="text" id="user-name" class="user-name input" placeholder="Enter your name...">
+            <!-- Text input field for the user's name -->
+
+            <label for="user-email" class="input-label">Email:</label>
+            <!-- label for the email input field -->
+            <input type="email" id="user-email" class="user-email input" placeholder="Enter your email...">
+            <!-- Email input field for the user's email address -->
+
+            <label for="user-phone" class="input-label">Phone:</label>
+            <!-- label for the phone number input field -->
+             <input type="number" id="user-phone" class="user-phone input" placeholder="Enter your phone number...">
+             <!-- Number input field for the user's phone number -->
+            
+            <button class="generate-qr-code button">Generate QR Code</button>
+            <!-- Button to trigger the OR Code generation -->
+        </div>
+
+        <div class="qr-canvas">
+        <!-- Div for displaying the generated QR Code and providing download options -->
+
+            <h2>QR Code</h2>
+            <!-- Heading for the QR Code display section -->
+                <div class="loading"></div>
+                <!-- Placeholder for a loading animation or message -->
+                <img src="" alt="" class="qr-image">
+                <!-- Image element to display the generated QR Code -->
+                <button class="download-qr-code button">Download QR Code</button>
+                <!-- Button to download the generated QR Code image -->
+            
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <!-- Link to an external JavaScript file for functionality
+    
+</body>
+</html>
